@@ -12,7 +12,7 @@ Clone the repo, give it execute permissions and run the script!
 
     git clone https://github.com/bronxi47/lazy-sdto.git
     
-    chmod +x lazy-sdto.sh'
+    chmod +x lazy-sdto.sh
 
 Install httpx
 
