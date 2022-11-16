@@ -21,6 +21,8 @@ DIR="temp"
 finder(){
     echo "Searching subdomains..."
     assetfinder $TARGET > $DIR.txt
+    echo "Searching subdomains with amass (pasive)..."
+    amass enum -passive -d $TARGET >> $DIR.txt
 }
 
 not_found(){
