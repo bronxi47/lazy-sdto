@@ -10,6 +10,10 @@ Automated tool for finding subdomain takeovers
 Install httpx
 
     go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+    
+Install amass
+
+    go install -v github.com/OWASP/Amass/v3/...@master
 
 
 ### It's easy!
