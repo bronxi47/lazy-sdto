@@ -27,7 +27,7 @@ finder(){
 
 not_found(){
     echo -e "\nThanks httpx :)" &&
-    httpx -l "$1" -mc 404 -sc | tee -a "$DIR"_inactives.txt &&
+    httpx -l "$1" -mc 404 -sc -nf | tee -a "$DIR"_inactives.txt &&
     [ ! -f "$DIR"_inactives.txt ] && echo "No 404 subdomains" && exit 1
     sed -i s/'http[s]\?:\/\/'// "$DIR"_inactives.txt
 }
